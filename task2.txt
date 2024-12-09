@@ -1,0 +1,9 @@
+git status
+# Stage changes made to tasks.txt
+git add tasks.txt
+# Stage all changes in the current directory
+git add .
+
+git commit -m "fixed that bug that’s been haunting my dreams"
+
+push 
