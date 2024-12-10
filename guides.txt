@@ -1,0 +1,224 @@
+
+ChatGPT said:
+ChatGPT
+Here’s a unified Git study guide that combines key commands from the resources you provided and what you’ve practiced with me. It includes commands, explanations, and a structure you can use for future reference.
+
+Git Study Guide
+1. Initial Setup & Configuration
+Before using Git, make sure to configure it with your user information.
+
+Set your name and email
+
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+Explanation: This is needed to track your commits properly with your identity.
+
+2. Create a New Repository
+To create a new Git repository:
+
+
+
+git init
+Explanation: Initializes an empty Git repository in the current directory.
+
+3. Check Repository Status
+To check the current status of your working directory:
+
+
+
+git status
+Explanation: Shows the status of the files in your working directory (staged, unstaged, or untracked).
+
+4. Add Files to the Staging Area
+Add files to be tracked or staged for the next commit:
+
+
+
+git add <file-name>
+git add .
+Explanation: Stages files for commit. git add . stages all changes in the current directory.
+
+5. Commit Changes
+To commit staged changes:
+
+
+
+git commit -m "Commit message"
+Explanation: Commits the staged changes with a descriptive message.
+
+6. View Commit History
+To view the commit history:
+
+
+
+git log
+For a simplified view with one line per commit:
+
+
+
+git log --oneline
+Explanation: git log shows the full history of commits. git log --oneline gives a shorter, one-line summary of each commit.
+
+7. Create & Switch Branches
+To create a new branch and switch to it:
+
+
+
+git checkout -b <branch-name>
+To switch to an existing branch:
+
+
+
+git checkout <branch-name>
+Explanation: Creates and switches to a new branch or switches to an existing branch.
+
+8. List Branches
+To view all branches in your repository:
+
+
+
+git branch
+Explanation: Lists all branches in the current repository.
+
+9. Delete a Branch
+To delete a local branch:
+
+
+
+git branch -d <branch-name>
+To force delete a branch that hasn’t been merged:
+
+
+
+git branch -D <branch-name>
+Explanation: Deletes the specified branch. Use -D to force the delete if the branch hasn’t been merged.
+
+10. Push Changes to Remote
+To push your changes to the remote repository:
+
+
+
+git push -u origin <branch-name>
+Explanation: Pushes your local branch to the remote repository and sets it to track the remote branch.
+
+11. Pull Changes from Remote
+To fetch and merge changes from the remote repository:
+
+
+
+git pull
+Explanation: Fetches changes from the remote and merges them into your local branch.
+
+12. Clone a Remote Repository
+To clone an existing remote repository to your local machine:
+
+
+
+git clone <repository-url>
+Explanation: Downloads the entire repository from a remote server to your local machine.
+
+13. Compare Changes Between Branches
+To compare the differences between two branches:
+
+
+
+git diff <branch1>..<branch2>
+Explanation: Shows the differences between two branches.
+
+14. View Uncommitted Changes
+To see what has been changed but not yet committed:
+
+
+
+git diff
+Explanation: Displays the changes in your working directory that haven’t been staged yet.
+
+15. Stage and Unstage Files
+To unstage a file (remove it from the staging area):
+
+
+
+git restore --staged <file-name>
+Explanation: Removes a file from the staging area but keeps the changes in the working directory.
+
+16. Undo Changes
+To undo changes in a file (revert back to the last committed version):
+
+
+
+git restore <file-name>
+Explanation: Discards local changes in a file and restores it to the version in the last commit.
+
+17. Merge Branches
+To merge one branch into another:
+
+
+
+git merge <branch-name>
+Explanation: Merges the specified branch into the current branch.
+
+18. Stash Changes
+To temporarily save changes without committing them:
+
+
+
+git stash
+To apply the stashed changes:
+
+
+
+git stash apply
+Explanation: Stashes your changes, allowing you to work on something else and come back later.
+
+19. Revert a Commit
+To create a new commit that undoes the changes from a previous commit:
+
+
+
+git revert <commit-id>
+Explanation: Reverts a commit and applies a new commit that undoes the changes.
+
+20. Fetch Changes from Remote
+To download changes from the remote repository without merging them:
+
+
+
+git fetch
+Explanation: Downloads changes from the remote without affecting your working directory or staging area.
+
+21. Work with Remotes
+To add a remote repository:
+
+
+
+git remote add origin <repository-url>
+To view remote repositories:
+
+
+
+git remote -v
+Explanation: Adds a remote repository or lists existing remotes for your project.
+
+22. Pull Changes from a Remote Branch
+To fetch and merge changes from a specific remote branch:
+
+
+
+git pull origin <branch-name>
+Explanation: Fetches and merges changes from the specified branch on the remote repository.
+
+23. Push Changes to a Specific Remote Branch
+To push to a specific branch on the remote repository:
+
+
+
+git push origin <branch-name>
+Explanation: Pushes the changes to a specific branch on the remote repository.
+
+Study and Practice Routine
+Create a repository and practice committing, branching, and pushing changes.
+Experiment with different branch operations like switching, merging, and deleting branches.
+Use git status and git log regularly to track changes in your repository.
+Practice undoing changes with git restore, git diff, and git revert.
+This guide should help you solidify your understanding of Git commands and workflows. Keep practicing, and let me know if you need additional explanations or examples! 🚀
