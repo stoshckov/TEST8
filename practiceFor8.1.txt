@@ -1,0 +1,85 @@
+ :
+
+ 
+
+# Git Practice Guide
+
+## 1. Set Up a Repository
+```
+mkdir <project-name>
+cd <project-name>
+git init
+touch README.md
+git add README.md
+git commit -m "Initial commit with README.md"
+Explanation: Initializes a new repository and adds a starter file.
+
+2. Create a New Branch
+
+
+git branch <branch-name>
+git checkout <branch-name>
+Or use:
+
+
+
+git checkout -b <branch-name>
+Explanation: Creates and switches to a new branch for your work.
+
+3. Make Changes
+Create or edit files:
+
+
+touch <file-name>
+echo "Some content" > <file-name>
+Stage the changes:
+
+
+git add <file-name>
+Commit the changes:
+
+
+git commit -m "Add <file-name>"
+4. Push the New Branch to GitHub
+
+
+git push -u origin <branch-name>
+Explanation: Pushes the branch and sets up tracking with the remote.
+
+5. Check the Status and Compare Branches
+Check your branch status:
+
+
+git status
+See differences with another branch (e.g., main):
+
+
+git diff main..<branch-name>
+View commits unique to the branch:
+
+
+git log main..<branch-name> --oneline
+6. Merge Branch into Main
+Switch to main:
+
+
+git checkout main
+Merge the branch:
+
+
+git merge <branch-name>
+Explanation: Combines the changes from your branch into main.
+
+7. Clean Up
+Delete the branch locally:
+
+
+git branch -d <branch-name>
+Delete the branch from the remote:
+
+
+git push origin --delete <branch-name>
+Practice Routine
+Create a repository and set up a simple project.
+Follow steps 2-5 to create new branches, make changes, and push them.
+Practice merging and resolving conflicts by modifying the same file in main and a feature
